@@ -2,7 +2,8 @@
 
 /*sumMultiples: sum all of the multiples of firstMultiple or secondMultiple
 that are less than bound*/
-int sumMultiples(int firstMultiple, int secondMultiple, int bound) {
+int sumMultiples(const int firstMultiple, 
+		const int secondMultiple, const int bound) {
 	int sum = 0;
 	for (int i = 1; i < bound; ++i) {
 		if (!(i % firstMultiple && i % secondMultiple)) sum += i;
@@ -18,9 +19,9 @@ int sumMultiples(int firstMultiple, int secondMultiple, int bound) {
 
 
 int main(int argc, char *argv[]) {
-	int firstMultiple = 3;
-	int secondMultiple = 5;
-	int bound = 1000;
-	sumMultiples(firstMultiple, secondMultiple, bound);
+	const int FIRST_MULTIPLE = 3;
+	const int SECOND_MULTIPLE = 5;
+	const int BOUND = 1000;
+	sumMultiples(FIRST_MULTIPLE, SECOND_MULTIPLE, BOUND);
 	return 0;
 }
