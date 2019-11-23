@@ -8,7 +8,7 @@ public class Program
     public static void Main()
     {
         IEnumerable<Match> matches = 
-	    MatchReader.ReadHandsIntoMatches("poker.txt");
+	    MatchReader.ReadHandsIntoMatches("Poker/poker.txt");
 	int numMatchesPlayerOneWins =
             matches.Sum(match => 
 		MatchEvaluator.DoesPlayerOneWin(match) ? 1 : 0);

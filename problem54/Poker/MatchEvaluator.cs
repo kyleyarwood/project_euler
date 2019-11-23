@@ -6,7 +6,7 @@ namespace Poker
     {
         public static bool DoesPlayerOneWin(Match match)
 	{
-            throw new NotImplementedException();
+            return true;
 	}
     }
 }
